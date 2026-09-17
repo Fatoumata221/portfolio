@@ -1,7 +1,11 @@
 "use client";
 
 import { gsap } from "gsap";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
+
+const GITHUB_AVATAR_URL =
+  "https://avatars.githubusercontent.com/u/109517841?v=4";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -9,7 +13,12 @@ export default function Hero() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-      tl.from(".hero-eyebrow", { opacity: 0, y: 24, scale: 0.8, duration: 0.7 })
+      tl.from(".hero-avatar", { opacity: 0, scale: 0.6, duration: 0.7 })
+        .from(
+          ".hero-eyebrow",
+          { opacity: 0, y: 24, scale: 0.8, duration: 0.7 },
+          "-=0.4",
+        )
         .from(
           ".hero-title",
           { opacity: 0, y: 60, duration: 1, stagger: 0.2 },
@@ -39,6 +48,14 @@ export default function Hero() {
       ref={containerRef}
       className="mx-auto flex max-w-5xl flex-col gap-6 px-6 pb-20 pt-16 sm:pt-24"
     >
+      <Image
+        src={GITHUB_AVATAR_URL}
+        alt="Photo de profil de Fatoumata Badiane"
+        width={112}
+        height={112}
+        priority
+        className="hero-avatar h-28 w-28 rounded-full border-4 border-accent-soft object-cover"
+      />
       <p className="hero-eyebrow text-sm font-medium uppercase tracking-widest text-accent">
         Développeuse Full Stack
       </p>
