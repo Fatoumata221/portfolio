@@ -21,10 +21,11 @@ export default function Reveal({ children, delay = 0, className }: RevealProps) 
         if (!entry.isIntersecting) return;
         animate(el, {
           opacity: [0, 1],
-          translateY: [24, 0],
-          duration: 700,
+          translateY: [48, 0],
+          scale: [0.94, 1],
+          duration: 900,
           delay,
-          ease: "outQuad",
+          ease: "outExpo",
         });
         observer.disconnect();
       },

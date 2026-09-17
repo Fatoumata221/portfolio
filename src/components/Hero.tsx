@@ -9,16 +9,23 @@ export default function Hero() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-      tl.from(".hero-eyebrow", { opacity: 0, y: 16, duration: 0.5 })
+      tl.from(".hero-eyebrow", { opacity: 0, y: 24, scale: 0.8, duration: 0.7 })
         .from(
           ".hero-title",
-          { opacity: 0, y: 28, duration: 0.7, stagger: 0.12 },
-          "-=0.25",
+          { opacity: 0, y: 60, duration: 1, stagger: 0.2 },
+          "-=0.3",
         )
-        .from(".hero-text", { opacity: 0, y: 16, duration: 0.6 }, "-=0.35")
+        .from(".hero-text", { opacity: 0, y: 30, duration: 0.8 }, "-=0.4")
         .from(
           ".hero-cta > *",
-          { opacity: 0, y: 12, duration: 0.5, stagger: 0.1 },
+          {
+            opacity: 0,
+            y: 24,
+            scale: 0.85,
+            duration: 0.7,
+            stagger: 0.15,
+            ease: "back.out(1.7)",
+          },
           "-=0.3",
         );
     }, containerRef);
