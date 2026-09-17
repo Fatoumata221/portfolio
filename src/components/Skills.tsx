@@ -1,3 +1,5 @@
+import Reveal from "@/components/Reveal";
+
 const skillGroups = [
   {
     category: "Langages & Frameworks",
@@ -20,8 +22,8 @@ export default function Skills() {
         Compétences
       </h2>
       <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
-        {skillGroups.map((group) => (
-          <div key={group.category}>
+        {skillGroups.map((group, i) => (
+          <Reveal key={group.category} delay={i * 100}>
             <h3 className="text-sm font-semibold text-foreground">
               {group.category}
             </h3>
@@ -35,7 +37,7 @@ export default function Skills() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
         ))}
       </div>
     </section>
