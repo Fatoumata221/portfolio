@@ -7,6 +7,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Chérie — boutique en ligne",
+    description:
+      "Application mobile et web de boutique mode, beauté et bijoux : onboarding, authentification, catalogue avec recherche et filtres, favoris, panier avec commande, et espace profil (commandes, adresses, paiement).",
+    tags: ["React Native", "Expo", "TypeScript", "Reanimated"],
+    links: [
+      {
+        label: "Voir le code",
+        href: "https://github.com/Fatoumata221/boutique-en-ligne-",
+      },
+    ],
+  },
+  {
     title: "Gestion de finances personnelles",
     description:
       "Application de suivi de budget avec visualisation des dépenses par catégorie pour aider à mieux gérer ses finances au quotidien.",
