@@ -23,7 +23,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Chérie — boutique en ligne",
+    title: "Boutique en ligne",
     description:
       "Application mobile et web de boutique mode, beauté et bijoux : onboarding, authentification, catalogue avec recherche et filtres, favoris, panier avec commande, et espace profil (commandes, adresses, paiement).",
     tags: ["React Native", "Expo", "TypeScript", "Reanimated"],
