@@ -1,7 +1,7 @@
 import Reveal from "@/components/Reveal";
 
 const stats = [
-  { value: "17+", label: "dépôts sur GitHub" },
+  { value: "20+", label: "dépôts sur GitHub" },
   { value: "Java", label: "& écosystème Spring" },
   { value: "Angular", label: "pour le front-end" },
 ];

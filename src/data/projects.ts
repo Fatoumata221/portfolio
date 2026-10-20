@@ -7,6 +7,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "AgriConseil IA",
+    description:
+      "Assistant agricole gratuit pour les producteurs du Sénégal : chat IA en streaming (à l'écrit ou à la voix), diagnostic des maladies des plantes à partir d'une photo avec un modèle exécuté en local, et conseils du jour selon la météo et les cultures. PWA installable, utilisable hors connexion.",
+    tags: ["React", "Node.js", "Express", "IA", "PWA"],
+    links: [
+      {
+        label: "Démo",
+        href: "https://agriconseil-ia.onrender.com",
+      },
+      {
+        label: "Voir le code",
+        href: "https://github.com/Fatoumata221/agriconseil-ia",
+      },
+    ],
+  },
+  {
     title: "Chérie — boutique en ligne",
     description:
       "Application mobile et web de boutique mode, beauté et bijoux : onboarding, authentification, catalogue avec recherche et filtres, favoris, panier avec commande, et espace profil (commandes, adresses, paiement).",

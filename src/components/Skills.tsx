@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 const skillGroups = [
   {
     category: "Langages & Frameworks",
-    skills: ["Java", "Spring Boot", "Angular", "TypeScript", "JavaScript", "Python", "Django"],
+    skills: ["Java", "Spring Boot", "Angular", "React", "React Native", "Node.js", "TypeScript", "JavaScript", "Python", "Django"],
   },
   {
     category: "Cloud & DevOps",
@@ -11,7 +11,7 @@ const skillGroups = [
   },
   {
     category: "Autres",
-    skills: ["HTML", "CSS", "API REST", "SQL"],
+    skills: ["HTML", "CSS", "Tailwind", "API REST", "SQL", "IA / LLM"],
   },
 ];
 
